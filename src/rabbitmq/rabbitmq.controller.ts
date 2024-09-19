@@ -27,7 +27,7 @@ export class RabbitmqController {
 		this.count = 0
 	}
 
-	@Post('/sensorData')
+	@Post('/sensor-data')
 	@HttpCode(200)
 	async sendSensorData(
 		@Req() { carrier }: ReqCarrier,
